@@ -7,5 +7,11 @@
   <bean id="mathsTeacher" class="com.mypackage.model.impl.MathsTeacher"></bean>
   <bean id="englishTeacher" class="com.mypackage.model.impl.EnglishTeacher"></bean>
   <bean id="psycologyTeacher" class="com.mypackage.model.impl.PsycologyTeacher"></bean>
+  
+  <bean id= "classRoom" class="com.mypackage.model.ClassRoom">
+  <constructor-arg value="6" index="1"></constructor-arg>
+  <constructor-arg value="50" index="0"></constructor-arg>
+  <constructor-arg ref="mathsTeacher"></constructor-arg>
+  </bean>
 
 </beans>

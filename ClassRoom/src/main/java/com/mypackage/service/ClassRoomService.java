@@ -1,20 +1,20 @@
 package com.mypackage.service;
 
-import com.mypackage.model.Teacher;
+import com.mypackage.model.ClassRoom;
 
 public class ClassRoomService {
-	private Teacher teacher;
+	private ClassRoom classRoom;
 
-	public Teacher getTeacher() {
-		return teacher;
+	public ClassRoom getClassroom() {
+		return classRoom;
 	}
 
-	public void setTeacher(Teacher teacher) {
-		this.teacher = teacher;
+	public void setClassRoom(ClassRoom classRoom) {
+		this.classRoom = classRoom;
 	}
 	
-	public void teaching(){
-		teacher.teach();
+	public void displayClassInfo(){
+		classRoom.displayClassInfo();
 	}
 
 }
